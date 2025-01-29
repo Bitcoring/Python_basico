@@ -1,6 +1,6 @@
 configuracion de GIT
 Nombre del usuario
-git config --global user.name Hammer
+git config --global user.name yo
 Direccion de mail
 git config --global user.email bitcoring@gmail.com
 
