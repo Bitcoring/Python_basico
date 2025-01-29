@@ -1,0 +1,15 @@
+configuracion de GIT
+Nombre del usuario
+git config --global user.name Hammer
+Direccion de mail
+git config --global user.email bitcoring@gmail.com
+
+Configurar el editor de codigo (vsc)
+git config --global core.editor "code --wait"
+
+correcion del salto de linea
+git config --global core.autocrlf true
+
+git remote add origin https://github.com/Bitcoring/Python_basico.git
+git branch -M main
+git push -u origin main
