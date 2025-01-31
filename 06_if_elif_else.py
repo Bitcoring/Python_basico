@@ -101,47 +101,47 @@
    
 
 
-# Pedir un número y validarlo
-def pedir_numero(mensaje):
-    while True:
-        try:
-            return float(input(mensaje))
-        except ValueError:
-            print("Error: Debes ingresar un número válido.")
+# # Pedir un número y validarlo
+# def pedir_numero(mensaje):
+#     while True:
+#         try:
+#             return float(input(mensaje))
+#         except ValueError:
+#             print("Error: Debes ingresar un número válido.")
 
-# Pedir una operación válida
-def pedir_operacion():
-    operaciones_validas = ["suma", "resta", "multiplicación", "división", "módulo"]
-    while True:
-        operacion = input("Elige una operación (suma, resta, multiplicación, división, módulo): ").strip().lower()
-        if operacion in operaciones_validas:
-            return operacion
-        print("Error: Ingresa una operación válida.")
+# # Pedir una operación válida
+# def pedir_operacion():
+#     operaciones_validas = ["suma", "resta", "multiplicación", "división", "módulo"]
+#     while True:
+#         operacion = input("Elige una operación (suma, resta, multiplicación, división, módulo): ").strip().lower()
+#         if operacion in operaciones_validas:
+#             return operacion
+#         print("Error: Ingresa una operación válida.")
 
-# Realizar la operación
-def calcular(num1, num2, operacion):
-    if operacion == "suma":
-        return num1 + num2
-    elif operacion == "resta":
-        return num1 - num2
-    elif operacion == "multiplicación":
-        return num1 * num2
-    elif operacion == "división":
-        if num2 == 0:
-            return "Error: No se puede dividir por cero."
-        return num1 / num2
-    elif operacion == "módulo":
-        if num2 == 0:
-            return "Error: No se puede calcular el módulo con cero."
-        return num1 % num2
+# # Realizar la operación
+# def calcular(num1, num2, operacion):
+#     if operacion == "suma":
+#         return num1 + num2
+#     elif operacion == "resta":
+#         return num1 - num2
+#     elif operacion == "multiplicación":
+#         return num1 * num2
+#     elif operacion == "división":
+#         if num2 == 0:
+#             return "Error: No se puede dividir por cero."
+#         return num1 / num2
+#     elif operacion == "módulo":
+#         if num2 == 0:
+#             return "Error: No se puede calcular el módulo con cero."
+#         return num1 % num2
 
-# Programa principal
-num1 = pedir_numero("Ingresa el primer número: ")
-num2 = pedir_numero("Ingresa el segundo número: ")
-operacion = pedir_operacion()
+# # Programa principal
+# num1 = pedir_numero("Ingresa el primer número: ")
+# num2 = pedir_numero("Ingresa el segundo número: ")
+# operacion = pedir_operacion()
 
-resultado = calcular(num1, num2, operacion)
-print(f"El resultado de la {operacion} es: {resultado}")
+# resultado = calcular(num1, num2, operacion)
+# print(f"El resultado de la {operacion} es: {resultado}")
 
 
 
@@ -162,3 +162,42 @@ print(f"El resultado de la {operacion} es: {resultado}")
 
 
 
+# **************************************************************************
+# **************************************************************************
+
+
+
+
+# respuesta = input("indique los numeros y la operación a realizar.\n Ejemplo : 10, 5, + ").split(" ").lower() .strip()
+# num_1 = float(respuesta[0])
+# num_2 = float(respuesta[1])
+# operacion = respuesta[2]
+# print(respuesta)
+
+# ****************************************
+# ****************************************
+
+# try:
+#   respuesta = input("indique los numeros y la operación a realizar.\n Ejemplo : 10, 5, + ").split(" ")
+#   num_1 = float(respuesta[0])
+#   num_2 = float(respuesta[1])
+#   operacion = respuesta[2]
+
+#      match operacion:
+#         case 
+#         print(respuesta)
+
+
+
+
+
+palabra = input("Ingresa una palabra: ").lower().replace(" ", "")  # Convertir a minúsculas y quitar espacios
+
+if palabra == palabra[::-1]:  # Comparar con su versión invertida
+    print("¡Es un palíndromo!")
+else:
+    print("No es un palíndromo.")
+
+
+numero = input("¿es par tu número? ")
+ if 
